@@ -3,7 +3,7 @@ import '../../../../css/jobCard.css';
 export default function JobCard() {
   return (
     <div className="job_card">
-      <span className="post_details">Posted 14 days ago</span>
+      <span className="post_details">⏳Posted 14 days ago</span>
       <header className="job_card_header">
         <img src="https://storage.googleapis.com/weekday-assets/airtableAttachment_1713598325603_7ico7.jpg" />
         <div className="job_title">
@@ -13,7 +13,7 @@ export default function JobCard() {
         </div>
       </header>
       <section className="job_salary">
-        <p>Estimated Salary: 18 - 35 LPA</p>
+        <p>Estimated Salary: ₹18 - 35 LPA ✅</p>
       </section>
       <section className="job_description">
         <strong>About Compnay:</strong>
@@ -45,8 +45,16 @@ export default function JobCard() {
           <p>Minimmum Experience</p>
           <p>2 years</p>
         </div>
-        <button>Easy Apply</button>
-        <button>Unlock Referral Asks</button>
+        <div className="footer_buttons">
+          <button id="apply_button">⚡Easy Apply</button>
+        </div>
+        <div className="footer_buttons">
+          <button id="referral_button">
+            <img src="https://weekday-logos-and-images.s3.eu-north-1.amazonaws.com/Mask+Group.png" />
+            <img src="https://weekday-logos-and-images.s3.eu-north-1.amazonaws.com/Mask+Group(1).png" />
+            Unlock Referral Asks
+          </button>
+        </div>
       </footer>
     </div>
   );

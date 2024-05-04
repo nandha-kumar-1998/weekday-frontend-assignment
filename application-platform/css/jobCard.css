@@ -1,8 +1,9 @@
 .job_card {
-  border: 1px solid blue;
-  max-width: 25rem;
-  margin-bottom: 3rem;
+  width: 27%;
+  margin: 0rem 1.5rem 3rem 0rem;
   padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px;
+  border-radius: 20px;
 }
 
 .post_details {
@@ -12,7 +13,7 @@
   border-radius: 10px;
   border: 1px solid rgb(230, 230, 230);
   margin: 0rem 0rem 1rem 0rem;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
 }
 
 .job_card_header {
@@ -33,19 +34,20 @@
 
 .job_title h3 {
   font-size: 1rem;
+  font-weight: 500;
   color: #c8c8c8;
 }
 
 .job_title h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .job_title p {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 .job_salary p {
-  font-size: 1.02rem;
+  font-size: 0.95rem;
   margin-bottom: 0.6rem;
 }
 
@@ -55,30 +57,108 @@
 
 .job_description > strong {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
   margin-bottom: 0.3rem;
 }
 
-.job_description div > strong,
+.job_description div > strong {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
 .job_description p {
-  font-size: 1.02rem;
+  font-size: 0.9rem;
 }
 
 .job_description .job_info {
   height: 12rem;
-  /* border: 1px solid black; */
   overflow: hidden;
 }
 
 .transparent_bar {
-  height: 6rem;
+  height: 10rem;
   width: 100%;
   bottom: 1rem;
   position: absolute;
+  /* border: 1px solid red; */
   z-index: 1;
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 1)
   );
+}
+
+.job_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -1rem;
+  z-index: 3;
+  margin: 0.6rem 0rem;
+}
+
+.job_link p {
+  color: #4943da;
+  cursor: pointer;
+}
+
+.job_experience p:first-child {
+  color: #8b8b8b;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.job_experience p:last-child {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+#apply_button {
+  background-color: #55efc4;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+#referral_button {
+  background-color: #4943da;
+  color: white;
+  font-size: 0.9rem;
+}
+.footer_buttons button {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: 0px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_buttons button img {
+  margin-right: 0.4rem;
+}
+
+@media (max-width: 1200px) {
+  .job_card {
+    width: 35%;
+  }
+}
+
+@media (max-width: 900px) {
+  .job_card {
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .job_card {
+    width: 85%;
+  }
 }
